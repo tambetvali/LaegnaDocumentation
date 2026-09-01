@@ -1,3 +1,5 @@
+![MySpiritWay](Rooted/Gfx/MySpiritualWay.png)
+
 LinkedIn:
 - Repeatedly modified my presentation so that last company I worked at, more than 10 years ago, is constantly set to beginning.
   - I fixed my account several times, but it tries to make it "complete".
