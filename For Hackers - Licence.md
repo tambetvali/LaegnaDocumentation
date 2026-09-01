@@ -1,3 +1,7 @@
+![ForHackers](Rooted/Gfx/ForHackers.png)
+
+<br>
+
 # The particular outlook of the chosen licence
 
 https://github.com/tambetvali/LaegnaDocumentation/blob/main/LICENCE.md
