@@ -1,0 +1,503 @@
+{
+  "tambetvali/ai-jungle-viz": {
+    "clones": "5u5"
+  },
+  "tambetvali/BinaryThinkingForMakingEnemies": {
+    "clones": "9u9"
+  },
+  "tambetvali/bind": {
+    "clones": "10u10"
+  },
+  "tambetvali/Blamers": {
+    "clones": "9u9"
+  },
+  "tambetvali/BulkLoad": {
+    "clones": "9u9"
+  },
+  "tambetvali/call-to-cooperate": {
+    "clones": "7u7"
+  },
+  "tambetvali/chem-visions-ai": {
+    "clones": "5u5"
+  },
+  "tambetvali/confident-ai-craft": {
+    "clones": "5u5"
+  },
+  "tambetvali/ConjecturesWithTheorems": {
+    "clones": "8u8"
+  },
+  "tambetvali/docs": {
+    "clones": "8u8"
+  },
+  "tambetvali/docu-deploy-ai": {
+    "clones": "5u5"
+  },
+  "tambetvali/embrace-data-whispers": {
+    "clones": "5u5"
+  },
+  "tambetvali/exponential-whispers": {
+    "views": "1u1",
+    "clones": "5u5",
+    "referrers": {
+      "spireason.neocities.org": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/exponometer.app": {
+    "clones": "8u8"
+  },
+  "tambetvali/FrequencyCalculator": {
+    "views": "77u1",
+    "clones": "143u70",
+    "referrers": {
+      "github.com": "8u1",
+      "spireason.neocities.org": "1u1"
+    },
+    "paths": {
+      "Overview": "14u1",
+      "/tree/main/CaffeineAIimpl": "11u1",
+      "/tree/main/CaffeineAIimpl/src": "6u1",
+      "/upload": "6u1",
+      "/tree/main": "5u1",
+      "/pulse": "4u1",
+      "/tree/main/CaffeineAIimpl/src/frontend": "4u1",
+      "/blob/main/FrequentialZones.md": "3u1",
+      "/edit/main/README.md": "3u1",
+      "/new/main": "3u1"
+    }
+  },
+  "tambetvali/FuzzyLogecs": {
+    "clones": "10u10"
+  },
+  "tambetvali/guide-to-ai-bloom": {
+    "clones": "4u4"
+  },
+  "tambetvali/IlluminationSimulatorCapable": {
+    "clones": "6u6"
+  },
+  "tambetvali/Immortalitesimal": {
+    "clones": "10u10"
+  },
+  "tambetvali/ImperativeLogical.lang": {
+    "clones": "4u4"
+  },
+  "tambetvali/ImplementationBinaryLaegna": {
+    "views": "3u1",
+    "clones": "8u8",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaeAI4Axiomator-YamaGotchi": {
+    "clones": "10u10"
+  },
+  "tambetvali/LaeArve": {
+    "views": "5u5",
+    "clones": "7u7",
+    "paths": {
+      "/blob/main/fractaloftheories.md": "3u3",
+      "/blob/main/README.md": "1u1",
+      "/blob/main/temp.md": "1u1"
+    }
+  },
+  "tambetvali/laegna-cosmic-void": {
+    "clones": "7u7"
+  },
+  "tambetvali/laegna-octave-lab": {
+    "views": "1u1",
+    "clones": "32u19",
+    "referrers": {
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/laegna-spibody-path": {
+    "clones": "5u5"
+  },
+  "tambetvali/laegna-visionary-haven": {
+    "clones": "4u4"
+  },
+  "tambetvali/Laegna18": {
+    "clones": "10u10"
+  },
+  "tambetvali/LaegnaAIBasics": {
+    "views": "1u1",
+    "clones": "8u8",
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAIExperiments": {
+    "views": "4u2",
+    "clones": "11u11",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "2u2",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAIHDvisualization": {
+    "views": "4u2",
+    "clones": "9u9",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "2u2",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAIHooksAndBones": {
+    "views": "3u1",
+    "clones": "7u7",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAIMLBasics": {
+    "views": "3u1",
+    "clones": "8u8",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAITrainer": {
+    "clones": "7u7"
+  },
+  "tambetvali/LaegnaAITraining": {
+    "views": "6u4",
+    "clones": "6u6",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "/blob/main/Training/LitGPT.md": "2u2",
+      "Overview": "1u1",
+      "/blob/main/Patterns/vocabulary.md": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaBaseAlphabet": {
+    "views": "9u1",
+    "clones": "10u10",
+    "referrers": {
+      "github.com": "6u1"
+    },
+    "paths": {
+      "/pulse": "4u1",
+      "/graphs/traffic": "3u1",
+      "Overview": "2u1"
+    }
+  },
+  "tambetvali/LaegnaDiscreteBinaryIntegrals": {
+    "clones": "8u8"
+  },
+  "tambetvali/LaegnaDocumentation": {
+    "views": "18u2",
+    "clones": "25u18",
+    "referrers": {
+      "github.com": "15u2"
+    },
+    "paths": {
+      "Overview": "6u2",
+      "/graphs/traffic": "3u1",
+      "/pulse": "3u1",
+      "/blob/main/LinkedIn Bias.md": "2u1",
+      "/tree/main/BusinessHeadlines": "2u1",
+      "/blob/main/BusinessHeadlines/2026-09-15-Audience.md": "1u1",
+      "/new/main/BusinessHeadlines": "1u1"
+    }
+  },
+  "tambetvali/LaeGNAfantasy123": {
+    "clones": "6u6"
+  },
+  "tambetvali/LaegnaFS": {
+    "clones": "7u7"
+  },
+  "tambetvali/LaegnaioTaeEvolution": {
+    "views": "3u1",
+    "clones": "11u11",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaMythos": {
+    "views": "3u1",
+    "clones": "9u9",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaPDFSources": {
+    "views": "6u1",
+    "clones": "8u8",
+    "referrers": {
+      "github.com": "4u1"
+    },
+    "paths": {
+      "Overview": "2u1",
+      "/graphs/traffic": "2u1",
+      "/pulse": "2u1"
+    }
+  },
+  "tambetvali/LaegnaPhysics": {
+    "views": "9u1",
+    "clones": "8u8",
+    "referrers": {
+      "github.com": "7u1"
+    },
+    "paths": {
+      "Overview": "3u1",
+      "/graphs/traffic": "3u1",
+      "/pulse": "3u1"
+    }
+  },
+  "tambetvali/LaegnaPracticalAI": {
+    "views": "3u1",
+    "clones": "7u7",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaSpider": {
+    "clones": "4u4"
+  },
+  "tambetvali/LaegnaSpireasonAtlasByCoPilot": {
+    "clones": "9u9"
+  },
+  "tambetvali/LaegnaWebsite": {
+    "clones": "6u6"
+  },
+  "tambetvali/LaeGOS": {
+    "clones": "7u7"
+  },
+  "tambetvali/LaeGOS-Drivers-LaeAutomate": {
+    "clones": "16u14"
+  },
+  "tambetvali/LaeGOS-Widgets": {
+    "clones": "8u8"
+  },
+  "tambetvali/LaeLane": {
+    "views": "1u1",
+    "clones": "15u15",
+    "referrers": {
+      "spireason.neocities.org": "1u1"
+    },
+    "paths": {
+      "/blob/main/LaegnaLane/Lane.md": "1u1"
+    }
+  },
+  "tambetvali/LaeLogecsLogex": {
+    "clones": "10u10"
+  },
+  "tambetvali/LaeMath": {
+    "views": "1u1",
+    "clones": "8u8",
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/LaeSpiEssentialTheorems": {
+    "views": "3u1",
+    "clones": "10u10",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaeStaDesc": {
+    "clones": "10u10"
+  },
+  "tambetvali/laGEOsis": {
+    "views": "10u2",
+    "clones": "11u11",
+    "referrers": {
+      "github.com": "7u1"
+    },
+    "paths": {
+      "Overview": "3u1",
+      "/graphs/traffic": "3u1",
+      "/pulse": "3u1",
+      "/tree/main/laGEOsis18": "1u1"
+    }
+  },
+  "tambetvali/Landscopes": {
+    "clones": "10u10"
+  },
+  "tambetvali/logecs-pathways-unfold": {
+    "clones": "5u5"
+  },
+  "tambetvali/MDCode": {
+    "views": "1u1",
+    "clones": "5u5",
+    "paths": {
+      "/blob/main/task2_gettomarkdown.md": "1u1"
+    }
+  },
+  "tambetvali/mind-sculptor-engine": {
+    "clones": "7u7"
+  },
+  "tambetvali/mind-spark-visions": {
+    "clones": "6u6"
+  },
+  "tambetvali/nexus-warp": {
+    "clones": "8u8"
+  },
+  "tambetvali/ObsidianLaegna31122025": {
+    "clones": "8u8"
+  },
+  "tambetvali/OceanReflectedInTeardrop.intuition": {
+    "views": "3u1",
+    "clones": "9u9",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/PersonalPage": {
+    "clones": "7u7"
+  },
+  "tambetvali/RedParser.dev": {
+    "clones": "9u9"
+  },
+  "tambetvali/RedRebol.lang": {
+    "clones": "9u9"
+  },
+  "tambetvali/SimplyAboutInfinities": {
+    "views": "1u1",
+    "clones": "10u10",
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/soma-material-path": {
+    "clones": "6u6"
+  },
+  "tambetvali/SpiBody": {
+    "views": "13u5",
+    "clones": "12u12",
+    "referrers": {
+      "github.com": "7u1"
+    },
+    "paths": {
+      "Overview": "3u1",
+      "/graphs/traffic": "3u1",
+      "/pulse": "3u1",
+      "/discussions/1": "1u1",
+      "/discussions/categories/announcements": "1u1",
+      "/discussions/categories/general": "1u1",
+      "/discussions/categories/q-a": "1u1"
+    }
+  },
+  "tambetvali/SpireasonWebsite14072026-Art": {
+    "clones": "9u9"
+  },
+  "tambetvali/SpireasonWebsite17052026": {
+    "clones": "7u7"
+  },
+  "tambetvali/SpireasonWebsite31122025": {
+    "views": "1u1",
+    "clones": "5u5",
+    "paths": {
+      "/blob/main/Comparison of, mostly, Buddhism and Christianity.pdf": "1u1"
+    }
+  },
+  "tambetvali/SpiritualReasoningLogecs": {
+    "views": "3u1",
+    "clones": "9u9",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/SpiZenTao": {
+    "views": "6u1",
+    "clones": "14u14",
+    "referrers": {
+      "github.com": "4u1"
+    },
+    "paths": {
+      "Overview": "2u1",
+      "/graphs/traffic": "2u1",
+      "/pulse": "2u1"
+    }
+  },
+  "tambetvali/TalesAndStoriesOfMeAndAnAI": {
+    "clones": "6u6"
+  },
+  "tambetvali/TalesAndStoriesOfMeAndAnAI2": {
+    "clones": "8u8"
+  },
+  "tambetvali/tambetvali": {
+    "views": "28u1",
+    "clones": "38u32",
+    "referrers": {
+      "github.com": "13u1"
+    },
+    "paths": {
+      "Overview": "7u1",
+      "/graphs/traffic": "6u1",
+      "/pulse": "6u1",
+      "/blob/main/README.md": "2u1",
+      "/edit/main/README.md": "2u1",
+      "/tree/main/Gfx": "2u1",
+      "/tree/main": "1u1",
+      "/upload": "1u1",
+      "/upload/main/Gfx": "1u1"
+    }
+  },
+  "tambetvali/theorem-theater": {
+    "clones": "7u7"
+  }
+}
