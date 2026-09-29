@@ -1,3 +1,9 @@
+![Gfx](Rooted/Gfx/LaegnaDoc.png)
+
+<br>
+
+<br>
+
 # LaegnaDocumentation: A Growing Modular Ecosystem for AI-Assisted Research & Knowledge Structuring
 
 ## Introduction
