@@ -1,3 +1,7 @@
+![Gfx](Rooted/Gfx/Introduction.png)
+
+<br>
+
 This is ChatGPT-generated intro to whole Laegna ecosystem:
 
 # Laegna–SpiReason–Tambet Väli Web Ecosystem
