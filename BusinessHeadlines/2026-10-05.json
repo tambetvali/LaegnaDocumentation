@@ -1,0 +1,726 @@
+{
+  "_documentation": {
+    "format": "Traffic values use '<count>u<unique>'; for example, '1u1' means 1 total event and 1 unique visitor or cloner.",
+    "scope": "GitHub traffic API values cover its rolling 14-day reporting window.",
+    "unique_counts": "Unique counts are reported independently for each repository or breakdown; summing them does not deduplicate people across entries.",
+    "breakdowns": "Referrers and paths contain only the popular entries returned by GitHub, so their totals are partial rather than repository-wide totals.",
+    "statistics": "Statistics summarize each reported repository metric or returned referrer/path entry. Quartiles use the median-of-halves method; sample variance and standard deviation are null when fewer than two observations exist. Modes are empty when no value repeats."
+  },
+  "_statistics": {
+    "views": {
+      "count": {
+        "n": 30,
+        "total": 571,
+        "mean": 19.033333333333335,
+        "median": 3.0,
+        "mode": [
+          1
+        ],
+        "min": 1,
+        "max": 230,
+        "range": 229,
+        "q1": 1,
+        "q3": 12,
+        "iqr": 11,
+        "sum_squares": 69267,
+        "mean_absolute_deviation": 23.58888888888889,
+        "population_variance": 1946.6322222222223,
+        "population_stddev": 44.1206552787039,
+        "sample_variance": 2013.7574712643677,
+        "sample_stddev": 44.874909150485955,
+        "standard_error": 8.193000002572049,
+        "coefficient_of_variation": 2.318072956849592,
+        "skewness": 3.845079756020607,
+        "excess_kurtosis": 14.863539929190978
+      },
+      "unique": {
+        "n": 30,
+        "total": 54,
+        "mean": 1.8,
+        "median": 1.0,
+        "mode": [
+          1
+        ],
+        "min": 1,
+        "max": 8,
+        "range": 7,
+        "q1": 1,
+        "q3": 2,
+        "iqr": 1,
+        "sum_squares": 172,
+        "mean_absolute_deviation": 1.0666666666666667,
+        "population_variance": 2.493333333333333,
+        "population_stddev": 1.5790292376436015,
+        "sample_variance": 2.579310344827586,
+        "sample_stddev": 1.6060231457944765,
+        "standard_error": 0.293218368275681,
+        "coefficient_of_variation": 0.8772384653575563,
+        "skewness": 2.6171905005525793,
+        "excess_kurtosis": 6.6798021104406775
+      }
+    },
+    "clones": {
+      "count": {
+        "n": 80,
+        "total": 872,
+        "mean": 10.9,
+        "median": 4.0,
+        "mode": [
+          3
+        ],
+        "min": 1,
+        "max": 316,
+        "range": 315,
+        "q1": 3.0,
+        "q3": 6.0,
+        "iqr": 3.0,
+        "sum_squares": 119420,
+        "mean_absolute_deviation": 12.14,
+        "population_variance": 1373.94,
+        "population_stddev": 37.06669664267373,
+        "sample_variance": 1391.3316455696202,
+        "sample_stddev": 37.300558247426004,
+        "standard_error": 4.170329191996748,
+        "coefficient_of_variation": 3.4006143708874985,
+        "skewness": 7.278002763263214,
+        "excess_kurtosis": 55.259150349745795
+      },
+      "unique": {
+        "n": 80,
+        "total": 617,
+        "mean": 7.7125,
+        "median": 4.0,
+        "mode": [
+          3
+        ],
+        "min": 1,
+        "max": 148,
+        "range": 147,
+        "q1": 3.0,
+        "q3": 6.0,
+        "iqr": 3.0,
+        "sum_squares": 30005,
+        "mean_absolute_deviation": 6.461250000000001,
+        "population_variance": 315.57984375,
+        "population_stddev": 17.764567085915715,
+        "sample_variance": 319.5745253164557,
+        "sample_stddev": 17.876647485377557,
+        "standard_error": 1.9986699493552447,
+        "coefficient_of_variation": 2.3033474341543876,
+        "skewness": 6.660608458993093,
+        "excess_kurtosis": 47.30242654437413
+      }
+    },
+    "referrers": {
+      "count": {
+        "n": 24,
+        "total": 94,
+        "mean": 3.9166666666666665,
+        "median": 2.0,
+        "mode": [
+          1
+        ],
+        "min": 1,
+        "max": 24,
+        "range": 23,
+        "q1": 1.0,
+        "q3": 5.0,
+        "iqr": 4.0,
+        "sum_squares": 986,
+        "mean_absolute_deviation": 3.3055555555555554,
+        "population_variance": 25.743055555555557,
+        "population_stddev": 5.073761479962924,
+        "sample_variance": 26.86231884057971,
+        "sample_stddev": 5.182887114396735,
+        "standard_error": 1.0579524020598257,
+        "coefficient_of_variation": 1.2954284629692572,
+        "skewness": 2.7512569024334956,
+        "excess_kurtosis": 7.721908893046336
+      },
+      "unique": {
+        "n": 24,
+        "total": 28,
+        "mean": 1.1666666666666667,
+        "median": 1.0,
+        "mode": [
+          1
+        ],
+        "min": 1,
+        "max": 3,
+        "range": 2,
+        "q1": 1.0,
+        "q3": 1.0,
+        "iqr": 0.0,
+        "sum_squares": 40,
+        "mean_absolute_deviation": 0.30555555555555564,
+        "population_variance": 0.3055555555555556,
+        "population_stddev": 0.5527707983925666,
+        "sample_variance": 0.3188405797101449,
+        "sample_stddev": 0.5646597025732799,
+        "standard_error": 0.11526067913468745,
+        "coefficient_of_variation": 0.4738035414793428,
+        "skewness": 3.0151134457776365,
+        "excess_kurtosis": 7.090909090909092
+      }
+    },
+    "paths": {
+      "count": {
+        "n": 111,
+        "total": 476,
+        "mean": 4.288288288288288,
+        "median": 2,
+        "mode": [
+          1
+        ],
+        "min": 1,
+        "max": 44,
+        "range": 43,
+        "q1": 1,
+        "q3": 6,
+        "iqr": 5,
+        "sum_squares": 5542,
+        "mean_absolute_deviation": 3.475854232610989,
+        "population_variance": 31.53851148445743,
+        "population_stddev": 5.615915907886926,
+        "sample_variance": 31.825225225225225,
+        "sample_stddev": 5.641385044935793,
+        "standard_error": 0.535456572251938,
+        "coefficient_of_variation": 1.3095938356627075,
+        "skewness": 3.9260132543908655,
+        "excess_kurtosis": 21.62856391955271
+      },
+      "unique": {
+        "n": 111,
+        "total": 126,
+        "mean": 1.135135135135135,
+        "median": 1,
+        "mode": [
+          1
+        ],
+        "min": 1,
+        "max": 3,
+        "range": 2,
+        "q1": 1,
+        "q3": 1,
+        "iqr": 0,
+        "sum_squares": 160,
+        "mean_absolute_deviation": 0.23861699537375208,
+        "population_variance": 0.15290966642317994,
+        "population_stddev": 0.3910366561119046,
+        "sample_variance": 0.1542997542997543,
+        "sample_stddev": 0.3928100740812973,
+        "standard_error": 0.037283882262639484,
+        "coefficient_of_variation": 0.3444846732414398,
+        "skewness": 2.990052613520206,
+        "excess_kurtosis": 8.704156355227394
+      }
+    }
+  },
+  "tambetvali/ai-jungle-viz": {
+    "clones": "4u4"
+  },
+  "tambetvali/BinaryThinkingForMakingEnemies": {
+    "clones": "5u5"
+  },
+  "tambetvali/bind": {
+    "clones": "5u5"
+  },
+  "tambetvali/Blamers": {
+    "clones": "2u2"
+  },
+  "tambetvali/BulkLoad": {
+    "clones": "6u6"
+  },
+  "tambetvali/call-to-cooperate": {
+    "clones": "3u3"
+  },
+  "tambetvali/chem-visions-ai": {
+    "clones": "2u2"
+  },
+  "tambetvali/confident-ai-craft": {
+    "clones": "2u2"
+  },
+  "tambetvali/ConjecturesWithTheorems": {
+    "clones": "4u4"
+  },
+  "tambetvali/docs": {
+    "clones": "3u3"
+  },
+  "tambetvali/docu-deploy-ai": {
+    "clones": "3u3"
+  },
+  "tambetvali/embrace-data-whispers": {
+    "clones": "2u2"
+  },
+  "tambetvali/exponential-whispers": {
+    "clones": "3u3"
+  },
+  "tambetvali/exponometer.app": {
+    "clones": "7u7"
+  },
+  "tambetvali/FrequencyCalculator": {
+    "views": "230u3",
+    "clones": "316u148",
+    "referrers": {
+      "github.com": "24u3",
+      "mastodon.social": "2u1",
+      "go.bsky.app": "1u1",
+      "spireason.neocities.org": "1u1"
+    },
+    "paths": {
+      "Overview": "44u3",
+      "/blob/main/FrequentialZones.md": "22u2",
+      "/blob/main/LogExpGaussianFourier.md": "18u2",
+      "/tree/main": "18u1",
+      "/tree/main/Gfx": "13u1",
+      "/tree/main/CaffeineAIimpl": "12u2",
+      "/upload": "12u1",
+      "/blob/main/LaegnaNumberSystem.md": "10u1",
+      "/edit/main/FrequentialZones.md": "9u1",
+      "/graphs/traffic": "7u1"
+    }
+  },
+  "tambetvali/FuzzyLogecs": {
+    "clones": "5u5"
+  },
+  "tambetvali/guide-to-ai-bloom": {
+    "clones": "3u3"
+  },
+  "tambetvali/IlluminationSimulatorCapable": {
+    "clones": "5u5"
+  },
+  "tambetvali/Immortalitesimal": {
+    "views": "1u1",
+    "clones": "4u4",
+    "referrers": {
+      "Google": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/ImperativeLogical.lang": {
+    "clones": "2u2"
+  },
+  "tambetvali/ImplementationBinaryLaegna": {
+    "clones": "8u8"
+  },
+  "tambetvali/LaeAI4Axiomator-YamaGotchi": {
+    "clones": "9u9"
+  },
+  "tambetvali/LaeArve": {
+    "views": "5u3",
+    "clones": "6u6",
+    "referrers": {
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/blob/main/README.md": "1u1",
+      "/blob/main/index.md": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/laegna-cosmic-void": {
+    "clones": "3u3"
+  },
+  "tambetvali/laegna-octave-lab": {
+    "views": "1u1",
+    "clones": "39u26",
+    "referrers": {
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/laegna-spibody-path": {
+    "clones": "3u3"
+  },
+  "tambetvali/laegna-visionary-haven": {
+    "clones": "3u3"
+  },
+  "tambetvali/Laegna18": {
+    "clones": "4u4"
+  },
+  "tambetvali/LaegnaAIBasics": {
+    "views": "10u8",
+    "clones": "10u10",
+    "referrers": {
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "2u2",
+      "/blob/main/aiethics.md": "2u2",
+      "/blob/main/advancedabout.md": "1u1",
+      "/blob/main/collab.md": "1u1",
+      "/blob/main/collections.md": "1u1",
+      "/blob/main/digging.md": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAIExperiments": {
+    "views": "3u2",
+    "clones": "9u9",
+    "paths": {
+      "Overview": "3u2"
+    }
+  },
+  "tambetvali/LaegnaAIHDvisualization": {
+    "views": "1u1",
+    "clones": "4u4",
+    "paths": {
+      "/pulls": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAIHooksAndBones": {
+    "clones": "9u9"
+  },
+  "tambetvali/LaegnaAIMLBasics": {
+    "clones": "5u5"
+  },
+  "tambetvali/LaegnaAITrainer": {
+    "clones": "1u1"
+  },
+  "tambetvali/LaegnaAITraining": {
+    "views": "3u3",
+    "clones": "5u5",
+    "paths": {
+      "/blob/main/Agnostic/dumbwork.md": "1u1",
+      "/blob/main/Patterns/vocabulary.md": "1u1",
+      "/blob/main/Training/LitGPT.md": "1u1"
+    }
+  },
+  "tambetvali/LaegnaBaseAlphabet": {
+    "views": "18u1",
+    "clones": "3u3",
+    "referrers": {
+      "github.com": "5u1"
+    },
+    "paths": {
+      "Overview": "6u1",
+      "/graphs/traffic": "6u1",
+      "/pulse": "6u1"
+    }
+  },
+  "tambetvali/LaegnaDiscreteBinaryIntegrals": {
+    "clones": "5u5"
+  },
+  "tambetvali/LaegnaDocumentation": {
+    "views": "102u1",
+    "clones": "118u68",
+    "referrers": {
+      "github.com": "13u1"
+    },
+    "paths": {
+      "Overview": "18u1",
+      "/tree/main/BusinessHeadlines": "13u1",
+      "/graphs/traffic": "8u1",
+      "/tree/main": "8u1",
+      "/pulse": "7u1",
+      "/blob/main/BusinessHeadlines/2026-09-27.csv": "6u1",
+      "/tree/main/Rooted/Gfx": "6u1",
+      "/blob/main/Introduction.md": "5u1",
+      "/tree/main/Rooted": "5u1",
+      "/blob/main/BusinessHeadlines/2026-09-27.json": "3u1"
+    }
+  },
+  "tambetvali/LaeGNAfantasy123": {
+    "views": "1u1",
+    "clones": "4u4",
+    "paths": {
+      "/blob/main/LICENCE.md": "1u1"
+    }
+  },
+  "tambetvali/LaegnaFS": {
+    "clones": "3u3"
+  },
+  "tambetvali/LaegnaioTaeEvolution": {
+    "views": "3u1",
+    "clones": "5u5",
+    "referrers": {
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaMythos": {
+    "clones": "6u6"
+  },
+  "tambetvali/LaegnaPDFSources": {
+    "views": "10u2",
+    "clones": "8u8",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "4u2",
+      "/graphs/traffic": "3u1",
+      "/pulse": "3u1"
+    }
+  },
+  "tambetvali/LaegnaPhysics": {
+    "views": "9u1",
+    "clones": "5u5",
+    "referrers": {
+      "github.com": "3u1"
+    },
+    "paths": {
+      "Overview": "3u1",
+      "/graphs/traffic": "3u1",
+      "/pulse": "3u1"
+    }
+  },
+  "tambetvali/LaegnaPracticalAI": {
+    "clones": "3u3"
+  },
+  "tambetvali/LaegnaSpider": {
+    "views": "1u1",
+    "clones": "4u4",
+    "paths": {
+      "/blob/main/LICENCE.md": "1u1"
+    }
+  },
+  "tambetvali/LaegnaSpireasonAtlasByCoPilot": {
+    "views": "3u1",
+    "clones": "5u5",
+    "referrers": {
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaegnaWebsite": {
+    "clones": "2u2"
+  },
+  "tambetvali/LaeGOS": {
+    "clones": "5u5"
+  },
+  "tambetvali/LaeGOS-Drivers-LaeAutomate": {
+    "clones": "7u6"
+  },
+  "tambetvali/LaeGOS-Widgets": {
+    "clones": "3u3"
+  },
+  "tambetvali/LaeLane": {
+    "views": "6u1",
+    "clones": "11u11",
+    "referrers": {
+      "github.com": "2u1"
+    },
+    "paths": {
+      "Overview": "2u1",
+      "/graphs/traffic": "2u1",
+      "/pulse": "2u1"
+    }
+  },
+  "tambetvali/LaeLogecsLogex": {
+    "views": "3u1",
+    "clones": "6u6",
+    "referrers": {
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/LaeMath": {
+    "views": "1u1",
+    "clones": "4u4",
+    "paths": {
+      "/blob/main/MathFuncs/Docs/README.md": "1u1"
+    }
+  },
+  "tambetvali/LaeSpiEssentialTheorems": {
+    "views": "2u2",
+    "clones": "2u2",
+    "paths": {
+      "/blob/main/geminiintro.md": "1u1",
+      "/blob/main/gpt_fiction_math_added.md": "1u1"
+    }
+  },
+  "tambetvali/LaeStaDesc": {
+    "views": "3u1",
+    "clones": "6u6",
+    "referrers": {
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/laGEOsis": {
+    "views": "12u1",
+    "clones": "6u6",
+    "referrers": {
+      "github.com": "4u1"
+    },
+    "paths": {
+      "Overview": "4u1",
+      "/graphs/traffic": "4u1",
+      "/pulse": "4u1"
+    }
+  },
+  "tambetvali/Landscopes": {
+    "views": "3u1",
+    "clones": "5u5",
+    "referrers": {
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1",
+      "/graphs/traffic": "1u1",
+      "/pulse": "1u1"
+    }
+  },
+  "tambetvali/logecs-pathways-unfold": {
+    "clones": "1u1"
+  },
+  "tambetvali/MDCode": {
+    "views": "1u1",
+    "clones": "1u1",
+    "paths": {
+      "/blob/main/task1_readblocks.md": "1u1"
+    }
+  },
+  "tambetvali/mind-sculptor-engine": {
+    "clones": "4u4"
+  },
+  "tambetvali/mind-spark-visions": {
+    "clones": "6u6"
+  },
+  "tambetvali/nexus-warp": {
+    "clones": "2u2"
+  },
+  "tambetvali/ObsidianLaegna31122025": {
+    "clones": "3u3"
+  },
+  "tambetvali/OceanReflectedInTeardrop.intuition": {
+    "clones": "6u6"
+  },
+  "tambetvali/PersonalPage": {
+    "clones": "3u3"
+  },
+  "tambetvali/RedParser.dev": {
+    "clones": "3u3"
+  },
+  "tambetvali/RedRebol.lang": {
+    "clones": "5u5"
+  },
+  "tambetvali/SimplyAboutInfinities": {
+    "views": "6u1",
+    "clones": "4u4",
+    "referrers": {
+      "github.com": "2u1"
+    },
+    "paths": {
+      "Overview": "2u1",
+      "/graphs/traffic": "2u1",
+      "/pulse": "2u1"
+    }
+  },
+  "tambetvali/soma-material-path": {
+    "clones": "2u2"
+  },
+  "tambetvali/SpiBody": {
+    "views": "26u6",
+    "clones": "7u6",
+    "referrers": {
+      "github.com": "6u1"
+    },
+    "paths": {
+      "Overview": "7u2",
+      "/pulse": "6u1",
+      "/graphs/traffic": "5u1",
+      "/discussions/categories/announcements": "3u2",
+      "/discussions/categories/q-a": "2u2",
+      "/discussions": "1u1",
+      "/discussions/1": "1u1",
+      "/discussions/categories/general": "1u1"
+    }
+  },
+  "tambetvali/SpireasonWebsite14072026-Art": {
+    "clones": "7u7"
+  },
+  "tambetvali/SpireasonWebsite17052026": {
+    "clones": "3u3"
+  },
+  "tambetvali/SpireasonWebsite31122025": {
+    "clones": "2u2"
+  },
+  "tambetvali/SpiritualReasoningLogecs": {
+    "views": "45u3",
+    "clones": "28u22",
+    "referrers": {
+      "github.com": "7u3"
+    },
+    "paths": {
+      "Overview": "9u3",
+      "/tree/main": "6u1",
+      "/blob/main/FAQ.md": "5u1",
+      "/blob/main/AuraLogecs.md": "4u1",
+      "/tree/main/Graphics": "4u1",
+      "/graphs/traffic": "3u1",
+      "/pulse": "3u1",
+      "/edit/main/FAQ.md": "2u1",
+      "/new/main": "2u1",
+      "/upload": "2u1"
+    }
+  },
+  "tambetvali/SpiZenTao": {
+    "views": "15u1",
+    "clones": "5u5",
+    "referrers": {
+      "github.com": "5u1"
+    },
+    "paths": {
+      "Overview": "5u1",
+      "/graphs/traffic": "5u1",
+      "/pulse": "5u1"
+    }
+  },
+  "tambetvali/TalesAndStoriesOfMeAndAnAI": {
+    "views": "1u1",
+    "clones": "4u4",
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/TalesAndStoriesOfMeAndAnAI2": {
+    "clones": "4u4"
+  },
+  "tambetvali/tambetvali": {
+    "views": "46u2",
+    "clones": "39u23",
+    "referrers": {
+      "github.com": "7u1"
+    },
+    "paths": {
+      "/graphs/traffic": "9u1",
+      "Overview": "8u1",
+      "/pulse": "8u1",
+      "/blob/main/README.md": "6u1",
+      "/tree/main/Logo2Img": "4u2",
+      "/edit/main/README.md": "4u1",
+      "/tree/main": "2u1",
+      "/blob/main/Logo2Img/LaeLogFreeGpt.png": "1u1",
+      "/blob/main/Logo2Img/LaeLogGptImg25.png": "1u1",
+      "/new/main": "1u1"
+    }
+  },
+  "tambetvali/theorem-theater": {
+    "clones": "3u3"
+  }
+}
