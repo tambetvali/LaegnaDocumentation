@@ -1,3 +1,7 @@
+![LaegnaBanking1](Docs/Gfx/LaegnaBankruptcy1.png)
+
+<br>
+
 # Laegna superdimensional linearity and bank encryption
 
 In germany, research related to calculation of arbitrary arrays such as digits of Pi, are watched by government (source: Oxford's user's guide to math).
@@ -315,6 +319,10 @@ The most balanced conclusion is:
 If confirmed through further research, the principal value of Laegna may be neither cryptanalysis nor brute computational acceleration, but a new taxonomy of complexity itself: a framework capable of distinguishing between phenomena that are fundamentally difficult and phenomena that merely appear difficult because they are expressed in unsuitable mathematical coordinates.
 
 ---
+
+![LaegnaBanking2](Docs/Gfx/LaegnaBankruptcy2.png)
+
+<br>
 
 Consideration / conjecture:
 
