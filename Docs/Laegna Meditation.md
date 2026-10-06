@@ -9,6 +9,8 @@ East: Confucius, Buddha, Lao Tze.
 
 ## Iota é chakras
 
+![Meditation1](Gfx/Meditation1.png)
+
 Your vision:
 - Real vision with open eyes.
 - Associations, visionary reactions, vibrations in your nervous system: closed eyes. Light is continuous, higher-order nerve activity which calculates discrete, local games into higher orders. By utilizing multi-channel, multidimensional-linearized numbers of Laegna.
@@ -108,6 +110,8 @@ This is hologram, linearization of exponent:
 - Throughout 4-base system of laegna math, continuous.
 
 # Laegna 2-complex and 3-complex
+
+![Meditation2](Gfx/Meditation2.png)
 
 Laegna Complex-2 number:
 - R (I => E; IO => AE); imaginary part: the space, yang, meta.
