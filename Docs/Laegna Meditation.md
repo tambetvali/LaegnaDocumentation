@@ -1,3 +1,7 @@
+![Meditation](Gfx/MeditationCover.png)
+
+<br>
+
 # Meditation
 
 West: Rene Descartes, Marcus Aurelius.
