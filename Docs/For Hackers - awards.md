@@ -1,3 +1,5 @@
+![For Hackers - Awards](Gfx/LaegnaAwardsCover.png)
+
 # For Hackers - Awards
 
 Spiritually, or in higher-order logic, "award" is that one can serve, not that one can enjoy the service:
