@@ -592,6 +592,10 @@ Clarification, asking for article after reading it's initial interpretation to c
 
 # Laegna, Irrational Realms and Practical Complexity Reduction
 
+![LaegnaBanking3](Gfx/LaegnaBankruptcy3.png)
+
+<br>
+
 ## Trivial Conclusion First
 
 The most important current observation is surprisingly simple:
@@ -967,3 +971,11 @@ If this direction continues to hold, the most important long-term contribution o
 - genuinely fundamental difficulty.
 
 That distinction alone could become a useful mathematical result even if irrational digit sequences remain just as difficult as before.
+
+---
+
+But every Thriller has alternate ending, and every banking solution still needs your awareness;
+
+so perhaps it's suddenly, instead like this (one can do banking in Laegna alone because complexity is needed *specifically there*):
+
+![LaegnaBankingEnding](Gfx/LaegnaBankruptcyEnding.png)
