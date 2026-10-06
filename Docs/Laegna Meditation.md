@@ -160,3 +160,7 @@ Buddha's statement, my interpretation (2 sentences into one):
 
 https://www.youtube.com/watch?v=GbMul06L2wE
 The Toast for the Next Adventure | Fantasy Drinking Music
+
+<br>
+
+![Meditation Ending](Gfx/MeditationEnding.png)
