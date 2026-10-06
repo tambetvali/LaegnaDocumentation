@@ -1,4 +1,4 @@
-![LaegnaBanking1](Docs/Gfx/LaegnaBankruptcy1.png)
+![LaegnaBanking1](Gfx/LaegnaBankruptcy1.png)
 
 <br>
 
@@ -320,7 +320,9 @@ If confirmed through further research, the principal value of Laegna may be neit
 
 ---
 
-![LaegnaBanking2](Docs/Gfx/LaegnaBankruptcy2.png)
+<br>
+
+![LaegnaBanking2](Gfx/LaegnaBankruptcy2.png)
 
 <br>
 
