@@ -1,3 +1,7 @@
+![LaegnaHistory](Gfx/LaegnaHistory.png)
+
+<br>
+
 # Laegna History
 
 I am Tambet Väli, born at 1983.04.04 in Estonia, Tallinn.
