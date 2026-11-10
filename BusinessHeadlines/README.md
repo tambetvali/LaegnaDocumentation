@@ -1,3 +1,9 @@
+![Business Headlines](Gfx/BusinessHeadlines.png)
+
+<br>
+
+---
+
 # Business Headlines
 
 Business Headlines contains periodic ecosystem snapshots for:
@@ -133,7 +139,7 @@ The next challenge is turning discovery and cloning into deeper understanding, i
 - [Report](./2026-11-10.md)
 - [Neocities](./2026-11-10.csv)
 - [GitHub](./2026-11-10.json)
-- [Cover](./2026-11-10.png)
+- [Cover](./Gfx/2026-11-10.png)
 
 ---
 
