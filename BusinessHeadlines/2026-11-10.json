@@ -1,0 +1,2752 @@
+{
+  "_documentation": {
+    "format": "Traffic values use '<count>u<unique>'; for example, '1u1' means 1 total event and 1 unique visitor or cloner. dailyviews and dailyclones are arrays of these values in the order returned by GitHub, with up to 14 daily entries.",
+    "scope": "GitHub traffic API values cover its rolling 14-day reporting window.",
+    "unique_counts": "Unique counts are reported independently for each repository or breakdown; summing them does not deduplicate people across entries.",
+    "breakdowns": "Referrers and paths contain only the popular entries returned by GitHub, so their totals are partial rather than repository-wide totals.",
+    "statistics": "Statistics summarize each reported repository metric or returned referrer/path entry. Quartiles use the median-of-halves method; sample variance and standard deviation are null when fewer than two observations exist. Modes are empty when no value repeats."
+  },
+  "_statistics": {
+    "views": {
+      "count": {
+        "n": 32,
+        "total": 1486,
+        "mean": 46.4375,
+        "median": 3.5,
+        "mode": [
+          1,
+          2
+        ],
+        "min": 1,
+        "max": 1132,
+        "range": 1131,
+        "q1": 2.0,
+        "q3": 23.0,
+        "iqr": 21.0,
+        "sum_squares": 1292360,
+        "mean_absolute_deviation": 69.3828125,
+        "population_variance": 38229.80859375,
+        "population_stddev": 195.52444500304816,
+        "sample_variance": 39463.028225806454,
+        "sample_stddev": 198.653034776231,
+        "standard_error": 35.117226998389995,
+        "coefficient_of_variation": 4.21048602967533,
+        "skewness": 5.340603658156144,
+        "excess_kurtosis": 26.695438948742158
+      },
+      "unique": {
+        "n": 32,
+        "total": 97,
+        "mean": 3.03125,
+        "median": 2.0,
+        "mode": [
+          2
+        ],
+        "min": 1,
+        "max": 8,
+        "range": 7,
+        "q1": 1.0,
+        "q3": 4.5,
+        "iqr": 3.5,
+        "sum_squares": 473,
+        "mean_absolute_deviation": 1.982421875,
+        "population_variance": 5.5927734375,
+        "population_stddev": 2.3649045303140674,
+        "sample_variance": 5.773185483870968,
+        "sample_stddev": 2.4027454055456996,
+        "standard_error": 0.4247493924315463,
+        "coefficient_of_variation": 0.7801746904128882,
+        "skewness": 1.0259346742463067,
+        "excess_kurtosis": -0.5146417999416988
+      }
+    },
+    "clones": {
+      "count": {
+        "n": 90,
+        "total": 2416,
+        "mean": 26.844444444444445,
+        "median": 4.0,
+        "mode": [
+          3
+        ],
+        "min": 1,
+        "max": 1640,
+        "range": 1639,
+        "q1": 3,
+        "q3": 5,
+        "iqr": 2,
+        "sum_squares": 2727750,
+        "mean_absolute_deviation": 41.53530864197531,
+        "population_variance": 29587.70913580247,
+        "population_stddev": 172.01078203357622,
+        "sample_variance": 29920.155305867665,
+        "sample_stddev": 172.97443541132796,
+        "standard_error": 18.233106429382687,
+        "coefficient_of_variation": 6.407686416813683,
+        "skewness": 9.165540562142278,
+        "excess_kurtosis": 82.95063174181917
+      },
+      "unique": {
+        "n": 90,
+        "total": 1075,
+        "mean": 11.944444444444445,
+        "median": 3.0,
+        "mode": [
+          3
+        ],
+        "min": 1,
+        "max": 533,
+        "range": 532,
+        "q1": 2,
+        "q3": 5,
+        "iqr": 3,
+        "sum_squares": 296417,
+        "mean_absolute_deviation": 15.322222222222223,
+        "population_variance": 3150.8524691358025,
+        "population_stddev": 56.13245468653409,
+        "sample_variance": 3186.2553058676654,
+        "sample_stddev": 56.44692468033724,
+        "standard_error": 5.950028296727919,
+        "coefficient_of_variation": 4.699461322593551,
+        "skewness": 8.899263340613105,
+        "excess_kurtosis": 79.50933804061302
+      }
+    },
+    "referrers": {
+      "count": {
+        "n": 34,
+        "total": 150,
+        "mean": 4.411764705882353,
+        "median": 1.0,
+        "mode": [
+          1
+        ],
+        "min": 1,
+        "max": 71,
+        "range": 70,
+        "q1": 1,
+        "q3": 4,
+        "iqr": 3,
+        "sum_squares": 5384,
+        "mean_absolute_deviation": 4.501730103806229,
+        "population_variance": 138.8892733564014,
+        "population_stddev": 11.785129331339618,
+        "sample_variance": 143.09803921568627,
+        "sample_stddev": 11.962359266285487,
+        "standard_error": 2.0515276891343412,
+        "coefficient_of_variation": 2.6712959817703132,
+        "skewness": 5.296367837661818,
+        "excess_kurtosis": 26.982866360071917
+      },
+      "unique": {
+        "n": 34,
+        "total": 53,
+        "mean": 1.5588235294117647,
+        "median": 1.0,
+        "mode": [
+          1
+        ],
+        "min": 1,
+        "max": 5,
+        "range": 4,
+        "q1": 1,
+        "q3": 2,
+        "iqr": 1,
+        "sum_squares": 109,
+        "mean_absolute_deviation": 0.6903114186851211,
+        "population_variance": 0.7759515570934256,
+        "population_stddev": 0.8808811254042316,
+        "sample_variance": 0.7994652406417112,
+        "sample_stddev": 0.8941282014575489,
+        "standard_error": 0.15334172148598574,
+        "coefficient_of_variation": 0.5650935521461108,
+        "skewness": 2.015401940858415,
+        "excess_kurtosis": 4.598703221067627
+      }
+    },
+    "paths": {
+      "count": {
+        "n": 138,
+        "total": 915,
+        "mean": 6.630434782608695,
+        "median": 2.0,
+        "mode": [
+          1
+        ],
+        "min": 1,
+        "max": 130,
+        "range": 129,
+        "q1": 1,
+        "q3": 3,
+        "iqr": 2,
+        "sum_squares": 53491,
+        "mean_absolute_deviation": 8.052930056710775,
+        "population_variance": 343.6532766225583,
+        "population_stddev": 18.537887598714107,
+        "sample_variance": 346.1616947000952,
+        "sample_stddev": 18.605421110528383,
+        "standard_error": 1.5837986227853975,
+        "coefficient_of_variation": 2.795878129642128,
+        "skewness": 5.186229990235614,
+        "excess_kurtosis": 28.095834348208907
+      },
+      "unique": {
+        "n": 138,
+        "total": 204,
+        "mean": 1.4782608695652173,
+        "median": 1.0,
+        "mode": [
+          1
+        ],
+        "min": 1,
+        "max": 8,
+        "range": 7,
+        "q1": 1,
+        "q3": 2,
+        "iqr": 1,
+        "sum_squares": 414,
+        "mean_absolute_deviation": 0.6238185255198487,
+        "population_variance": 0.8147448015122873,
+        "population_stddev": 0.9026321518272475,
+        "sample_variance": 0.8206918438590923,
+        "sample_stddev": 0.9059204401375942,
+        "standard_error": 0.07711706910149671,
+        "coefficient_of_variation": 0.6106041027066675,
+        "skewness": 3.759921781914688,
+        "excess_kurtosis": 20.540985459811274
+      }
+    }
+  },
+  "tambetvali/ai-jungle-viz": {
+    "clones": "3u3",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/BinaryThinkingForMakingEnemies": {
+    "clones": "3u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0"
+    ]
+  },
+  "tambetvali/bind": {
+    "clones": "3u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0"
+    ]
+  },
+  "tambetvali/Blamers": {
+    "clones": "4u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "2u1"
+    ]
+  },
+  "tambetvali/BulkLoad": {
+    "clones": "3u3",
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/call-to-cooperate": {
+    "clones": "5u5",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/chem-visions-ai": {
+    "clones": "2u2",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/confident-ai-craft": {
+    "clones": "1u1",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/ConjecturesWithTheorems": {
+    "clones": "4u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "3u2",
+      "0u0"
+    ]
+  },
+  "tambetvali/docs": {
+    "clones": "3u2",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "2u1",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/docu-deploy-ai": {
+    "clones": "3u3",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/embrace-data-whispers": {
+    "clones": "1u1",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/exponential-whispers": {
+    "clones": "2u2",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/exponometer.app": {
+    "clones": "1u1",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/FrequencyCalculator": {
+    "clones": "5u5",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "3u3",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/FuzzyLogecs": {
+    "clones": "3u2",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/guide-to-ai-bloom": {
+    "clones": "2u2",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/IlluminationSimulatorCapable": {
+    "clones": "3u3",
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/Immortalitesimal": {
+    "clones": "5u4",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/ImperativeLogical.lang": {
+    "clones": "1u1",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0"
+    ]
+  },
+  "tambetvali/ImplementationBinaryLaegna": {
+    "clones": "5u5",
+    "dailyclones": [
+      "1u1",
+      "3u3",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaeAI4Axiomator-YamaGotchi": {
+    "clones": "3u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaeArve": {
+    "views": "23u7",
+    "clones": "28u16",
+    "dailyviews": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "13u3",
+      "6u1"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "3u2",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "12u7",
+      "11u6"
+    ],
+    "referrers": {
+      "mathforums.com": "2u2",
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "5u5",
+      "/tree/main/Books": "5u2",
+      "/tree/main/Books/ClassicTraditions": "5u2",
+      "/blob/main/Books/ClassicTraditions/LeonorPlusAndMinus.md": "4u1",
+      "/blob/main/READMEX.md": "2u2",
+      "/blob/main/Books/ClassicTraditions/RankComplexity.md": "1u1",
+      "/new/main/Books/ClassicTraditions": "1u1"
+    }
+  },
+  "tambetvali/LaeChing": {
+    "views": "17u2",
+    "clones": "6u5",
+    "dailyviews": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "2u1",
+      "0u0",
+      "0u0",
+      "5u1",
+      "3u1",
+      "1u1",
+      "2u1",
+      "3u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "2u1",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "4u2",
+      "mastodon.social": "1u1"
+    },
+    "paths": {
+      "Overview": "9u2",
+      "/tree/main/Programming": "5u1",
+      "/blob/main/Programming/README.md": "1u1",
+      "/new/main": "1u1",
+      "/tree/main": "1u1"
+    }
+  },
+  "tambetvali/LaeCombenator": {
+    "views": "36u2",
+    "clones": "127u61",
+    "dailyviews": [
+      "0u0",
+      "32u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "4u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "34u16",
+      "55u24",
+      "21u14",
+      "3u3",
+      "0u0",
+      "3u3",
+      "1u1",
+      "1u1",
+      "9u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "5u2"
+    },
+    "paths": {
+      "Overview": "7u2",
+      "/blob/main/Zombinatorics.md": "7u1",
+      "/blob/main/README.md": "5u1",
+      "/tree/main": "4u1",
+      "/edit/main/Zombinatorics.md": "3u1",
+      "/pulse": "2u2",
+      "/new/main": "2u1",
+      "/upload": "2u1",
+      "/upload/main": "2u1",
+      "/edit/main/README.md": "1u1"
+    }
+  },
+  "tambetvali/LaeComplex": {
+    "clones": "5u5",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/laegna-cosmic-void": {
+    "clones": "2u2",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/laegna-octave-lab": {
+    "clones": "4u4",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0"
+    ]
+  },
+  "tambetvali/laegna-spibody-path": {
+    "clones": "3u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/laegna-visionary-haven": {
+    "views": "1u1",
+    "clones": "2u2",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "paths": {
+      "/blob/main/README.md": "1u1"
+    }
+  },
+  "tambetvali/Laegna18": {
+    "clones": "5u5",
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaegnaAIBasics": {
+    "views": "8u8",
+    "clones": "6u5",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "3u3",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "2u2"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "1u1"
+    ],
+    "paths": {
+      "Overview": "2u2",
+      "/blob/main/chapters.md": "2u2",
+      "/blob/main/gettingstarted.md": "2u2",
+      "/blob/main/ai-sci-fi.md": "1u1",
+      "/tree/main/LabDepth.ai/Exponometer.py/Symbols.speak": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAIExperiments": {
+    "views": "7u7",
+    "clones": "9u8",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "3u3",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "1u1",
+      "1u1",
+      "0u0",
+      "1u1",
+      "3u2"
+    ],
+    "referrers": {
+      "aocr.org": "5u5"
+    },
+    "paths": {
+      "Overview": "3u3",
+      "/activity": "1u1",
+      "/blob/main/aiplatformideas.md": "1u1",
+      "/commit/94e158893baaa1f846f58a5099416f5060dd6ab0": "1u1",
+      "/tree/main/RandomThings": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAIHDvisualization": {
+    "views": "2u2",
+    "clones": "5u4",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2"
+    ],
+    "paths": {
+      "Overview": "2u2"
+    }
+  },
+  "tambetvali/LaegnaAIHooksAndBones": {
+    "clones": "4u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "3u2"
+    ]
+  },
+  "tambetvali/LaegnaAIMLBasics": {
+    "views": "1u1",
+    "clones": "3u3",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ],
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAITrainer": {
+    "views": "1u1",
+    "clones": "3u2",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "2u1",
+      "0u0"
+    ],
+    "paths": {
+      "/blob/main/LICENCE.md": "1u1"
+    }
+  },
+  "tambetvali/LaegnaAITraining": {
+    "views": "3u3",
+    "clones": "4u4",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1"
+    ],
+    "paths": {
+      "/blob/main/Agnostic/combinationsprogramming.md": "1u1",
+      "/blob/main/Patterns/vocabulary.md": "1u1",
+      "/blob/main/Training/LitGPT.md": "1u1"
+    }
+  },
+  "tambetvali/LaegnaBaseAlphabet": {
+    "views": "29u2",
+    "clones": "22u15",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "0u0",
+      "0u0",
+      "20u2",
+      "4u2",
+      "3u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "4u3",
+      "13u7",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "3u2"
+    },
+    "paths": {
+      "/pulse": "3u2",
+      "/blob/main/GlobalEthics/Harmonic.png": "3u1",
+      "/blob/main/PlusMinus/SignsOfSystems.png": "2u2",
+      "/blob/main/README.md": "2u2",
+      "Overview": "2u1",
+      "/blob/main/FinalUnknown/OOmega.png": "1u1",
+      "/blob/main/Graphics/DaisyElise.png": "1u1",
+      "/blob/main/LogicStates/LogicStates.png": "1u1",
+      "/blob/main/LogicStates/LogicStatesUnknowns.png": "1u1",
+      "/blob/main/MathOps/MathOps.png": "1u1"
+    }
+  },
+  "tambetvali/LaegnaDiscreteBinaryIntegrals": {
+    "clones": "3u2",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "1u1"
+    ]
+  },
+  "tambetvali/LaegnaDocumentation": {
+    "views": "71u7",
+    "clones": "82u50",
+    "dailyviews": [
+      "17u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "41u2",
+      "0u0",
+      "10u3",
+      "2u2",
+      "0u0",
+      "1u1"
+    ],
+    "dailyclones": [
+      "36u20",
+      "16u11",
+      "2u1",
+      "0u0",
+      "1u1",
+      "1u1",
+      "4u3",
+      "0u0",
+      "20u14",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "6u2",
+      "mastodon.social": "2u1"
+    },
+    "paths": {
+      "/tree/main/BusinessHeadlines": "22u2",
+      "/blob/main/BusinessHeadlines/2026-11-04.md": "7u2",
+      "Overview": "6u2",
+      "/blob/main/BusinessHeadlines/2026-10-27.csv": "4u1",
+      "/blob/main/BusinessHeadlines/2026-10-27.md": "3u1",
+      "/new/main/BusinessHeadlines": "3u1",
+      "/blob/main/BusinessHeadlines/2026-07-25.json": "2u2",
+      "/blob/main/aisystems.md": "2u2",
+      "/blob/main/costsandfreedoms.md": "2u2",
+      "/blob/main/BusinessHeadlines/2026-10-05.csv": "2u1"
+    }
+  },
+  "tambetvali/LaeGNAfantasy123": {
+    "clones": "2u2",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaegnaFS": {
+    "views": "2u2",
+    "clones": "2u2",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0"
+    ],
+    "paths": {
+      "/blob/main/README.md": "2u2"
+    }
+  },
+  "tambetvali/LaegnaioTaeEvolution": {
+    "clones": "5u5",
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "1u1",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaegnaMythos": {
+    "clones": "4u3",
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaegnaNumberSystems": {
+    "views": "3u1",
+    "clones": "5u5",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "3u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "1u1",
+      "mastodon.social": "1u1"
+    },
+    "paths": {
+      "Overview": "3u1"
+    }
+  },
+  "tambetvali/LaegnaPDFSources": {
+    "clones": "3u3",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaegnaPhysics": {
+    "views": "3u1",
+    "clones": "5u5",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "3u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "1u1",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "1u1",
+      "mastodon.social": "1u1"
+    },
+    "paths": {
+      "Overview": "3u1"
+    }
+  },
+  "tambetvali/LaegnaPracticalAI": {
+    "views": "1u1",
+    "clones": "2u2",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "vuink.com": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/LaegnaSpider": {
+    "clones": "3u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaegnaSpireasonAtlasByCoPilot": {
+    "clones": "4u4",
+    "dailyclones": [
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaegnaWebsite": {
+    "clones": "4u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "3u2",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaeGOS": {
+    "views": "3u1",
+    "clones": "5u4",
+    "dailyviews": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "1u1",
+      "spireason.neocities.org": "1u1"
+    },
+    "paths": {
+      "Overview": "2u1",
+      "/tree/main/Specifications": "1u1"
+    }
+  },
+  "tambetvali/LaeGOS-Alpha": {
+    "views": "1132u8",
+    "clones": "1640u533",
+    "dailyviews": [
+      "24u2",
+      "155u3",
+      "166u3",
+      "74u3",
+      "46u1",
+      "69u2",
+      "84u3",
+      "100u3",
+      "80u2",
+      "93u2",
+      "68u3",
+      "67u1",
+      "8u1",
+      "98u3"
+    ],
+    "dailyclones": [
+      "96u54",
+      "85u49",
+      "222u111",
+      "242u105",
+      "133u57",
+      "125u60",
+      "62u39",
+      "104u52",
+      "166u70",
+      "136u59",
+      "104u50",
+      "73u38",
+      "46u19",
+      "46u21"
+    ],
+    "referrers": {
+      "github.com": "71u3",
+      "spireason.neocities.org": "4u2",
+      "actualized.org": "1u1",
+      "mastodon.social": "1u1",
+      "news.ycombinator.com": "1u1"
+    },
+    "paths": {
+      "Overview": "130u8",
+      "/tree/main/LaeGOS-Skydrive": "122u2",
+      "/tree/main/TerminalMode": "103u3",
+      "/tree/main/LaeGOS-Skydrive/DataRfx": "60u2",
+      "/blob/main/LaeGOS-Skydrive/DataRfx/laegna.json": "45u2",
+      "/upload": "36u1",
+      "/tree/main/LaeGOS-Skydrive/DataGfx": "30u2",
+      "/tree/main": "27u3",
+      "/edit/main/LaeGOS-Skydrive/DataRfx/laegna.json": "22u1",
+      "/tree/main/TerminalMode/Gfx": "21u2"
+    }
+  },
+  "tambetvali/LaeGOS-Drivers-LaeAutomate": {
+    "clones": "5u4",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "2u1",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaeGOS-Widgets": {
+    "views": "9u1",
+    "clones": "3u3",
+    "dailyviews": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "6u1",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "4u1",
+      "spireason.neocities.org": "1u1"
+    },
+    "paths": {
+      "Overview": "6u1",
+      "/tree/master/templates": "2u1",
+      "/blob/master/templates/index.html": "1u1"
+    }
+  },
+  "tambetvali/LaeLane": {
+    "views": "2u2",
+    "clones": "3u3",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "paths": {
+      "/blob/main/LaegnaLane/LaegnaLaneAI.md": "2u2"
+    }
+  },
+  "tambetvali/LaeLogecsLogex": {
+    "clones": "2u2",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaeMath": {
+    "views": "2u2",
+    "clones": "3u3",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "mathforums.com": "1u1"
+    },
+    "paths": {
+      "/blob/main/MathFuncs/Docs/CALCULATORS.md": "1u1",
+      "/tree/main/MathFuncs/Docs": "1u1"
+    }
+  },
+  "tambetvali/LaeMathArt": {
+    "clones": "15u10",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "4u4",
+      "1u1",
+      "3u3",
+      "0u0",
+      "3u2",
+      "0u0",
+      "0u0",
+      "2u1",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaeSpiEssentialTheorems": {
+    "views": "4u4",
+    "clones": "2u2",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "mathforums.com": "2u2"
+    },
+    "paths": {
+      "Overview": "2u2",
+      "/blob/main/LICENCE.md": "1u1",
+      "/blob/main/gpt_fiction_math_added.md": "1u1"
+    }
+  },
+  "tambetvali/LaeStaDesc": {
+    "clones": "4u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "2u1"
+    ]
+  },
+  "tambetvali/laGEOsis": {
+    "clones": "5u4",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "3u2",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/LaGOS-Physics-Laegna": {
+    "views": "23u3",
+    "clones": "7u7",
+    "dailyviews": [
+      "6u1",
+      "0u0",
+      "0u0",
+      "7u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "3u1",
+      "5u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "2u2",
+      "0u0",
+      "2u2",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "5u3",
+      "mastodon.social": "2u1"
+    },
+    "paths": {
+      "Overview": "9u3",
+      "/tree/main/Lagenesis": "5u2",
+      "/tree/main": "4u2",
+      "/blob/main/Laegna Physics Illustrated.md": "2u1",
+      "/blob/main/README.md": "2u1",
+      "/blob/main/Lagenesis/FlowerOfLife.md": "1u1"
+    }
+  },
+  "tambetvali/Landscopes": {
+    "clones": "4u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "2u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/LaTecimalSystem": {
+    "views": "25u2",
+    "clones": "38u20",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "25u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "2u2",
+      "0u0",
+      "0u0",
+      "14u6",
+      "10u6",
+      "10u5",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "2u2"
+    },
+    "paths": {
+      "/tree/main/Docs": "5u1",
+      "/blob/main/Docs/Gfx/RankedTesimal.png": "4u2",
+      "/blob/main/RankedDecimal.md": "4u1",
+      "/edit/main/RankedDecimal.md": "3u1",
+      "/tree/main/Docs/Gfx": "3u1",
+      "Overview": "2u2",
+      "/tree/main": "2u1",
+      "/upload": "1u1",
+      "/upload/main/Docs/Gfx": "1u1"
+    }
+  },
+  "tambetvali/laTHERMOSis": {
+    "clones": "9u8",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "4u3",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/logecs-pathways-unfold": {
+    "clones": "6u5",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "1u1",
+      "2u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/MDCode": {
+    "views": "7u7",
+    "clones": "4u3",
+    "dailyviews": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "3u3",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "2u1",
+      "0u0",
+      "0u0"
+    ],
+    "paths": {
+      "/blob/main/task3_readfiles.md": "3u3",
+      "/blob/main/README.md": "1u1",
+      "/blob/main/output.md": "1u1",
+      "/blob/main/task4_highlighttypes.md": "1u1",
+      "/blob/main/task5_server.md": "1u1"
+    }
+  },
+  "tambetvali/mind-sculptor-engine": {
+    "clones": "1u1",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/mind-spark-visions": {
+    "clones": "2u2",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/nexus-warp": {
+    "clones": "3u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1"
+    ]
+  },
+  "tambetvali/ObsidianLaegna31122025": {
+    "views": "1u1",
+    "clones": "4u4",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "3u3",
+      "0u0"
+    ],
+    "paths": {
+      "/blob/main/LICENCE.md": "1u1"
+    }
+  },
+  "tambetvali/OceanReflectedInTeardrop.intuition": {
+    "clones": "6u6",
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0"
+    ]
+  },
+  "tambetvali/PersonalPage": {
+    "clones": "2u2",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/RedParser.dev": {
+    "clones": "1u1",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/RedRebol.lang": {
+    "views": "2u2",
+    "clones": "4u3",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "2u1",
+      "0u0"
+    ],
+    "referrers": {
+      "aocr.org": "1u1",
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "2u2"
+    }
+  },
+  "tambetvali/SimplyAboutInfinities": {
+    "clones": "4u3",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/soma-material-path": {
+    "clones": "4u4",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/SpiBody": {
+    "views": "16u6",
+    "clones": "59u32",
+    "dailyviews": [
+      "8u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "6u4",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ],
+    "dailyclones": [
+      "26u15",
+      "23u11",
+      "0u0",
+      "0u0",
+      "3u2",
+      "0u0",
+      "2u2",
+      "3u2",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "1u1"
+    },
+    "paths": {
+      "Overview": "3u3",
+      "/pulse": "3u2",
+      "/blob/main/collectiveholisticbody.md": "2u2",
+      "/tree/main/diary": "2u1",
+      "/blob/main/diary/Growth.md": "1u1",
+      "/graphs/traffic": "1u1",
+      "/new/main": "1u1",
+      "/new/main/diary": "1u1",
+      "/new/main/notes": "1u1",
+      "/tree/main/notes": "1u1"
+    }
+  },
+  "tambetvali/SpireasonWebsite14072026-Art": {
+    "clones": "5u5",
+    "dailyclones": [
+      "2u2",
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1"
+    ]
+  },
+  "tambetvali/SpireasonWebsite17052026": {
+    "clones": "4u4",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0"
+    ]
+  },
+  "tambetvali/SpireasonWebsite31122025": {
+    "views": "2u2",
+    "clones": "6u5",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "2u1"
+    ],
+    "paths": {
+      "/blob/main/Principles of Material Magic.pdf": "1u1",
+      "/blob/main/The Law of Imperfection and Karma.pdf": "1u1"
+    }
+  },
+  "tambetvali/SpiritualReasoningLogecs": {
+    "views": "1u1",
+    "clones": "4u4",
+    "dailyviews": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "referrers": {
+      "Google": "1u1"
+    },
+    "paths": {
+      "Overview": "1u1"
+    }
+  },
+  "tambetvali/SpiZenTao": {
+    "clones": "5u4",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "2u1",
+      "2u2"
+    ]
+  },
+  "tambetvali/TalesAndStoriesOfMeAndAnAI": {
+    "clones": "5u4",
+    "dailyclones": [
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "2u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/TalesAndStoriesOfMeAndAnAI2": {
+    "clones": "5u4",
+    "dailyclones": [
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "2u1",
+      "0u0",
+      "1u1",
+      "0u0"
+    ]
+  },
+  "tambetvali/tambetvali": {
+    "views": "23u2",
+    "clones": "26u18",
+    "dailyviews": [
+      "12u2",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "1u1",
+      "5u2",
+      "2u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "1u1",
+      "12u8",
+      "7u4",
+      "2u2",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "1u1",
+      "0u0",
+      "1u1",
+      "0u0"
+    ],
+    "referrers": {
+      "github.com": "11u2"
+    },
+    "paths": {
+      "Overview": "10u2",
+      "/blob/main/Gfx/TambetVjali.png": "2u2",
+      "/pulse": "2u2",
+      "/blob/main/README.md": "2u1",
+      "/edit/main/README.md": "2u1",
+      "/tree/main/Gfx": "2u1",
+      "/graphs/traffic": "1u1",
+      "/upload": "1u1",
+      "/upload/main/Gfx": "1u1"
+    }
+  },
+  "tambetvali/theorem-theater": {
+    "clones": "1u1",
+    "dailyclones": [
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ]
+  },
+  "tambetvali/Vikingers": {
+    "views": "26u5",
+    "clones": "83u52",
+    "dailyviews": [
+      "20u3",
+      "0u0",
+      "1u1",
+      "1u1",
+      "0u0",
+      "0u0",
+      "0u0",
+      "4u2",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0",
+      "0u0"
+    ],
+    "dailyclones": [
+      "11u9",
+      "58u30",
+      "2u1",
+      "0u0",
+      "3u3",
+      "1u1",
+      "1u1",
+      "1u1",
+      "0u0",
+      "3u3",
+      "0u0",
+      "0u0",
+      "2u2",
+      "1u1"
+    ],
+    "referrers": {
+      "github.com": "4u3"
+    },
+    "paths": {
+      "Overview": "8u5",
+      "/edit/main/README.md": "2u2",
+      "/pulse": "2u2",
+      "/tree/main": "2u1",
+      "/tree/main/Data": "2u1",
+      "/tree/main/Data/LanguageTree": "2u1",
+      "/blob/main/Data/LanguageTree/PIEAndVikingLatino.png": "1u1",
+      "/blob/main/Data/LanguageTree/PIEToVikingLatino.png": "1u1",
+      "/blob/main/README.md": "1u1",
+      "/graphs/traffic": "1u1"
+    }
+  }
+}
