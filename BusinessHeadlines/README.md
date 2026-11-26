@@ -143,6 +143,20 @@ The next challenge is turning discovery and cloning into deeper understanding, i
 
 ---
 
+### 2026-11-26 — Laegna–SpiReason Activity Report
+
+- [Weekly statistics (CSV)](2026-11-26.csv)
+- [GitHub activity data (JSON)](2026-11-26.json)
+- [Full activity report (Markdown)](2026-11-26.md)
+
+This report reviews the latest activity across the SpiReason website and the Laegna GitHub ecosystem.
+SpiReason recorded 1,468 visits during November 19–25, averaging about 210 per day, showing a modest recovery from early November.
+GitHub activity remains centred on LaeGOS-Alpha, with exploration extending into its mathematical, theoretical, and structured-data documentation.
+Overall, the figures suggest consolidation around a more integrated technical hub after the stronger activity recorded earlier in November.
+The report also considers historical trends, repository-level interest, cross-platform referrals, and the limitations of interpreting views and clones.
+
+---
+
 ## Supporting Documents
 
 ### Statistical Interpretation
